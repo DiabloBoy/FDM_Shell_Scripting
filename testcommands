@@ -1,0 +1,15 @@
+
+Phase 1 Error Handling
+
+bash recycle.sh                    #gives an error, no filename provided
+bash recycle.sh -i                 #gives an error, no filename provided
+bash recycle.sh file10             # gives an error files does not exist
+bash recycle.sh dir1               # directory name provided,it only works if there is -r
+bash recyle.sh recycle.sh          # Error, terminate script
+
+
+Phase 2 Error handling
+
+bash restore.sh                   # display error message, no filename provided
+bash restore.sh file1             # Display error file does not exists
+bash restore.sh file10            # script must check if file already exists in target directory
